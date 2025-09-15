@@ -119,7 +119,7 @@ public void OnClientCookiesCached(int client)
 	    g_bUseHardcodedKey[client] = (StringToInt(buffer) == 1);
 	}
 
-	// Load HUD position cookie
+	// Load FOV Cookie
 	g_cFovCookie.Get(client, buffer, sizeof(buffer));
 	if (buffer[0] == '\0')
 	{
